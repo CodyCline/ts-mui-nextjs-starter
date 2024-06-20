@@ -14,6 +14,24 @@ const gitContentSource = new GitContentSource({
     }
 });
 
+export const HeroSection = {
+    name: "HeroSection",
+    type: "object",
+    fields: [
+      {
+        type: "string",
+        name: "title",
+        label: "Heading"
+      },
+      {
+        type: "string",
+        name: "emoji",
+        controlType: "custom-inline-html",
+        controlFilePath: ".stackbit/fields/emoji.html"
+      }
+    ]
+  };
+
 export const sbConfig = defineStackbitConfig({
     stackbitVersion: '~0.6.0',
     ssgName: 'nextjs',

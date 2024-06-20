@@ -1,0 +1,27 @@
+body {
+    max-width: 100%;
+  }
+  
+  button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.25rem;
+    line-height: 1;
+    transition: background 0.3s ease;
+  }
+  
+  button.active {
+    border-color: teal;
+  }
+  
+  button:hover {
+    background: #efefef;
+  }
+  
+  .grid {
+    display: flex;
+    gap: 1rem;
+  }
